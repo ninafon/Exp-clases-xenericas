@@ -4,7 +4,7 @@ package exemploherdanza;
 import java.util.ArrayList;
 
 public class ExemploXenericos {
-    
+     
     public static void main(String[] args) {
     Xenerica<String> obxString = new Xenerica<String>(); 
     // obxecto tipo String  
@@ -21,6 +21,11 @@ public class ExemploXenericos {
          
      per.setVariable(obxPer);
      per.amosar();
+     ListasXenericos <Periodico> lisPer= new ListasXenericos<Periodico>();
+    lisPer.engadir(new Periodico("2/2/2","22"));
+    lisPer.engadir(new Periodico("2/2/2","23"));
+    lisPer.engadir(new Periodico("2/2/2","24"));
+     lisPer.amosar(lisPer.getArray());
      
     }      
 }
